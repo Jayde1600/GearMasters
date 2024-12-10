@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GearMasters.com</title>
+    <link rel="stylesheet" href="styling/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="landing">
+        <video autoplay muted loop disablePictureInPicture id="GearMBK" class="GearMBK">
+            <source src="assets/videos/GearMBK.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="company">
+            <div class="title"><h1>GearMasters</h1></div>
+            <div class="logging"><a class="login">Login</a></div>
+        </div>
+
+        <div class="navbar">
+            <li>Bugatti</li>
+            <li>Pagani</li>
+            <li>Koenigsegg</li>
+            <li>Ferrari</li>
+            <li>Lamborghini</li>
+            <li>Mercedes</li>
+            <li>Rolls-Royce</li>
+            <li>McLaren</li>
+            <li>Porsche</li>
+            <li>Bentley</li>
+            <li>BMW</li>
+            <li>Audi</li>
+            <li>Aston Martin</li>
+        </div>
+
+        <div class="intro-text">
+            <h1>Luxurious Lifestyle</h1>
+            <p>Find The Perfect Luxury Car For You</p>
+        </div>
+
+        <div class="arrow-down">
+            
+            <a href="#about-us"><i class="fa-regular fa-circle-down"></i></a>
+        </div>
+        
+    </section>
+
+    <section class="about-us">
+        <div class="about-heading" id="about-us">
+            <h1 class="about-h1">About Us</h1>
+            <h1 class="about-h1">About Us</h1>
+        </div>
+        <div class="about-text">
+            <div class="box-text">
+                <p> 
+                    Welcome to GearMasters, your ultimate destination for luxury and performance
+                    automobiles. We are driven by passion, fueled by excellence, and committed to
+                    providing an unmatched car-buying experience. At GearMasters, we believe that
+                    every vehicle tells a story—a story of speed, sophistication, and innovation.
+                    Our curated collection features some of the world’s most iconic automotive
+                    brands, from Bugatti to Ferrari, Lamborghini to Rolls-Royce. Whether you're
+                    seeking the thrill of a hypercar or the elegance of a luxury sedan, we have 
+                    the perfect ride to match your lifestyle.</p>
+            </div>
+        </div>
+        <div class="about-bk">
+            <video autoplay muted loop disablePictureInPicture id="porshe_v" class="porshe_v">
+                <source src="assets/videos/porshe_car.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+</body>
+
+<script>
+    const video = document.getElementById("GearMBK");
+    video.addEventListener("contextmenu", (event) => {
+        event.preventDefault(); // Disable right-click menu
+    });
+</script>
+
+</html>
