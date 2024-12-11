@@ -1,8 +1,9 @@
 * {
-    font-family: "Josefin Sans", sans-serif, "Italiana", sans-serif;
+    font-family: "Josefin Sans", sans-serif, "Italiana", sans-serif, "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    outline: none;
 }
 
 .landing {
@@ -134,7 +135,7 @@
     position: absolute;
     bottom: 80px;
     left: 50px;
-    font-size: 36px;
+    font-size: 31px;
 }
 
 .intro-text h1 {
@@ -145,6 +146,30 @@
 .intro-text p {
     font-family: "Italiana", sans-serif;
     color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: solid 5px white;
+    animation: typewriter 2.8s steps(28), blink 800ms steps(28) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent; /** change to white */
+    }
+
+    to {
+        border-color: transparent;
+    }
 }
 
 .arrow-down {
@@ -176,22 +201,21 @@
 /** -------------------------------------------------------------------------------------------------------*/
 
 .about-us {
+    position: relative;
     z-index: 1;
     color: rgb(0, 0, 0);
-    height: 70vh;
+    height: fit-content;
     /* background: linear-gradient(180deg, #cfcece 10%, #8d8c8c 30%, #474747, #000000); */
 }
 
 .about-heading {
     display: flex;
     justify-content: center;
-    position: relative;
-    margin-bottom: 110px;
+    margin-bottom: 40px;
     padding-top: 90px;
 }
 
 .about-heading h1 {
-    position: absolute;
     font-size: 3.9rem;
     font-family: "Poppins", sans-serif;
 }
@@ -217,8 +241,7 @@
 }
 
 .about-bk {
-    display: flex;
-    height: 80vh;
+    height: 36vh;
     width: 100%;
 }
 
@@ -231,8 +254,8 @@
 .porshe_v {
     width: 100%;
     height: 55vh;
-    object-fit: cover; /* Maintain aspect ratio, cover container */
-    z-index: -1; /* Send the video to the back */
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* 
@@ -257,6 +280,64 @@
     }
 } */
 
+.services {
+    padding-top: 210px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.space {
+    height: 60vh;
+    width: 80%;
+    color: #121212;
+}
+
+.grid-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.ser-heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.new-car {
+    display: flex;
+}
+
+.newCar-text {
+    display: flex;
+    color: #202020;
+}
+
+.head-div {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    width: 100%;
+}
+
+.ser-head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    color: #202020;
+}
+
+.New-Symbol {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.New-Symbol i {
+    font-size: 40px;
+}
+
 @media (min-aspect-ratio:16/9) {
     .GearMBK {
         width: 100%;
@@ -270,3 +351,33 @@
         height: 100%;
     }
 }
+
+/* 
+.services .ser-heading {
+    position: absolute;
+    font-size: 38px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 8px rgba(255, 251, 18, 0.877);
+}
+
+.ser-heading h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+
+.ser-heading h1:nth-child(2) {
+    color: rgb(207, 207, 24);
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        clip-path: polygon(0% 49%, 12% 49%, 26% 56%, 40% 61%, 53% 65%, 68% 64%, 83% 59%, 95% 56%, 
+        100% 55%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 55%, 14% 58%, 27% 60%, 44% 55%, 57% 52%, 70% 54%, 83% 56%, 94% 53%, 
+        100% 44%, 100% 100%, 0% 100%);
+    }
+} */
