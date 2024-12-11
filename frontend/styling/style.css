@@ -1,5 +1,5 @@
 * {
-    font-family: "Josefin Sans", sans-serif, "Italiana", sans-serif, "Roboto", sans-serif;
+    font-family: "Josefin Sans", "Italiana", "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -47,10 +47,13 @@
     align-items: center;
     background: transparent;
     color: white;
-    z-index: 1; /* Ensure content is above the overlay */
+    animation: scroll-transition;
+    animation-timeline: scroll(y);
+    z-index: 5;
 }
 
 .company .login {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     font-size: 17px;
     width: 60px;
@@ -88,8 +91,8 @@
 }
 
 .title h1 {
-    font-family: "Italiana", sans-serif;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 .navbar {
@@ -111,14 +114,31 @@
     border-bottom-style: dashed;
     border-bottom-color: rgb(122, 121, 121);
     border-bottom-width: 1px;
-    z-index: 1; /* Ensure navbar is above the overlay */
+    animation: scroll-transition;
+    animation-timeline: scroll(y);
+    z-index: 5;
+}
+
+@keyframes scroll-transition {
+    0% {
+        background-color: transparent;
+    }
+    1.5% {
+        background-color: #121212;
+        border-bottom: none;
+    }
+    100% {
+        background-color: #121212;
+        border-bottom: none;
+    }
 }
 
 .navbar li {
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style: none;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     cursor: pointer;
     transition: text-shadow 0.3s, color 0.2s;
 }
@@ -144,7 +164,8 @@
 }
 
 .intro-text p {
-    font-family: "Italiana", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     color: white;
     overflow: hidden;
     white-space: nowrap;
@@ -280,6 +301,8 @@
     }
 } */
 
+/** ----------------------------------------------------------------------------------------- */
+
 .services {
     padding-top: 210px;
     background-color: white;
@@ -297,20 +320,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
 
 .ser-heading {
+    font-family: 'Roboto', sans-serif;
     font-size: 32px;
     margin-bottom: 40px;
 }
 
 .new-car {
-    display: flex;
-}
-
-.newCar-text {
-    display: flex;
-    color: #202020;
+    display: grid;
+    grid-template-rows: 60px 1fr;
 }
 
 .head-div {
@@ -323,9 +344,29 @@
     display: flex;
     align-items: center;
     width: 100%;
-    font-family: "Roboto", sans-serif;
     font-size: 35px;
     color: #202020;
+}
+
+.ser-head h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-div {
+    display: grid;
+    grid-template-columns: 51px 1fr;
+    margin-top: 15px;
+}
+
+.ser-text {
+    color: #202020;
+    
+}
+
+.ser-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 28px;
 }
 
 .New-Symbol {
