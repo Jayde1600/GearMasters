@@ -308,6 +308,7 @@
     background-color: white;
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
 .space {
@@ -332,11 +333,66 @@
 .new-car {
     display: grid;
     grid-template-rows: 60px 1fr;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.new-car:hover {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    transform: scale(1.02);
+    padding-right: 10px;
+}
+
+.pre-owned {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.pre-owned:hover {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    transform: scale(1.02);
+    padding-right: 10px;
+}
+
+.custom {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.custom:hover {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    transform: scale(1.02);
+    padding-right: 10px;
+}
+
+.service-div {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.service-div:hover {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    transform: scale(1.02);
+    padding-right: 10px;
 }
 
 .head-div {
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 65px 1fr;
     width: 100%;
 }
 
@@ -360,7 +416,6 @@
 
 .ser-text {
     color: #202020;
-    
 }
 
 .ser-text p {
@@ -373,6 +428,7 @@
     display: flex;
     align-items: center;
     padding-right: 20px;
+    padding-left: 10px;
 }
 
 .New-Symbol i {
