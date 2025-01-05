@@ -1,0 +1,110 @@
+.landing-contact {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, transparent, rgba(5, 5, 5, 0.95) 93%), url('../assets/images/2025-Hennessey.jpg');
+    background-size: cover;
+    background-position: center;
+    align-items:end;
+}
+
+.contact-home {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center; 
+    z-index: 2;
+    padding-left: 50px;
+}
+
+.contact-home h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: white;
+}
+
+.contact-text p {
+    font-family: 'Roboto', serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.opening {
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 120vh;
+    max-width: 100%;
+    padding: 20px 0;
+}
+
+.opening-times {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.opening-times h1 {
+    font-family: 'Poppins', serif;
+    font-size: 55px;
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 15px rgba(255, 251, 18, 0.9), 0 0 30px rgba(255, 251, 18, 0.7);
+}
+
+.contain-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.8);
+    border: 2px solid rgb(255, 251, 18);
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.location, .open-hours {
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.location {
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.location h4, .open-hours h4 {
+    font-family: 'Roboto', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(255, 251, 18);
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.8);
+}
+
+.location p, .open-hours p {
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.open-hours {
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Add subtle hover effect for details */
+.open-details div:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+
+

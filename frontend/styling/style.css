@@ -30,7 +30,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Apply the dark overlay */
+    background: rgba(0, 0, 0, 0.5); /* Apply the dark overlay */
     z-index: 0; /* Layer above video, below content */
 }
 
@@ -56,7 +56,7 @@
     font-family: 'Roboto', sans-serif;
     display: flex;
     font-size: 17px;
-    width: 60px;
+    width: 90px;
     justify-content: center;
     padding: 6px 18px;
     border-radius: 20px;
@@ -73,7 +73,7 @@
     box-shadow: 0 0 20px rgba(255, 251, 18, 0.877);
     color: black;
     border: none;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .logging {
@@ -408,6 +408,13 @@
     margin-bottom: 40px;
 }
 
+.newCar-text .ser-text p {
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Roboto', serif;
+    color: black;
+}
+
 .new-car {
     display: grid;
     grid-template-rows: 60px 1fr;
@@ -434,7 +441,7 @@
     border-color: black;
     border-width: 1px;
     border-style: solid;
-    transform: scale(1.02);
+    transform: scale(1.01);
     padding-right: 10px;
 }
 
@@ -592,10 +599,131 @@
 }
 
 .email-sub .sub-button:hover {
-    background-color: rgb(255, 251, 18);
-    color: #121212;
+    background-color: #121212;
+    transform: scale(1.02);
+    color: rgb(255, 251, 18);
     font-size: 18px;
     font-weight: 500;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    height: 85vh;
+    width: 100%;
+    color: white;
+}
+
+.nav-footer {
+    width: 90%;
+}
+
+.nav-divider {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    width: 100%;
+    border-bottom: solid rgb(87, 87, 87) 1px;
+}
+
+.nav-divider ul h3 {
+    margin-bottom: 40px;
+    font-family: 'Poppins', serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.877);
+}
+
+.nav-divider ul li {
+    font-family: 'Roboto', serif;
+    list-style: none;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.nav-divider ul li:hover {
+    color: rgb(255, 251, 18);
+    transform: scale(1.03);
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.877);
+}
+
+.contact-foot {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: solid rgb(87, 87, 87) 1px;
+}
+
+.address p {
+    display: inline-block;
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    cursor: pointer;
+    transition: text-shadow 0.3s;
+    color: white;
+}
+
+.address p:hover {
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.877);
+    color: rgb(255, 251, 18);
+}
+
+.address a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    cursor: pointer;
+    transition: text-shadow 0.3s;
+    color: white;
+}
+
+.address a:hover {
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.877);
+    color: rgb(255, 251, 18);
+}
+
+.address i {
+    margin-right: 7px;
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.877);
+}
+
+.social-media {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.social-media i {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.social-media i:hover {
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.877);
+}
+
+.my-tag {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.my-tag p {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    font-size: 13px;
 }
 
 @media (min-aspect-ratio:16/9) {
