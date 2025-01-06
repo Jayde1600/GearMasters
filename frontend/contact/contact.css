@@ -10,6 +10,7 @@
 
 .contact-home {
     display: flex;
+    font-family: 'Poppins', sans-serif;
     height: 200px;
     width: 100%;
     align-items: center; 
@@ -28,6 +29,115 @@
     color: white;
     font-size: 18px;
     font-weight: 300;
+}
+
+.info-division {
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 100vh;
+    max-width: 100%;
+    padding: 20px 0;
+}
+
+.request {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.info-division h1 {
+    font-family: 'Poppins', serif;
+    font-size: 55px;
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 7px rgba(255, 251, 18, 0.9), 0 0 30px rgba(255, 251, 18, 0.7);
+}
+
+.center-contain {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contain-req {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 30px;
+    height: 60vh;
+    width: 80%;
+}
+
+.info-cars {
+    width: 400px;
+    height: 420px;
+    border: 1px solid rgb(255, 251, 18);
+    cursor: pointer;
+}
+
+.info-cars:hover {
+    transform: scale(1.02);
+}
+
+.inCars {
+    width: 100%;
+    height: 250px;
+}
+
+.carOpen {
+    width: 100%;
+    height: 100%;
+}
+
+.ourCars {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.ourCars h3 {
+    font-size: 25px;
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.9);
+}
+
+.CarsText {
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.CarsText p {
+    color: white;
+    font-family: 'Roboto', serif;
+}
+
+.clicky {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.clicky i {
+    color: rgb(255, 251, 18);
+}
+
+.info-services {
+    width: 400px;
+    height: 420px;
+    border: 1px solid rgb(255, 251, 18);
+    cursor: pointer;
+}
+
+.info-services:hover {
+    transform: scale(1.02);
+}
+
+.info-fin {
+    width: 400px;
+    height: 420px;
+    border: 1px solid rgb(255, 251, 18);
+    cursor: pointer;
+}
+
+.info-fin:hover {
+    transform: scale(1.02);
 }
 
 .opening {

@@ -232,7 +232,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-    padding-top: 90px;
+    padding-top: 120px;
 }
 
 .about-heading h1 {
@@ -585,6 +585,7 @@
     font-size: 18px;
     margin-bottom: 15px;
     border: 1px solid #d1d0d0;
+    padding-left: 10px;
 }
 
 .email-sub .sub-button {
@@ -611,7 +612,7 @@
     justify-content: center;
     align-items: center;
     background-color: #121212;
-    height: 85vh;
+    height: 75vh;
     width: 100%;
     color: white;
 }
