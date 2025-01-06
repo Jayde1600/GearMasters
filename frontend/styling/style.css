@@ -727,6 +727,27 @@
     font-size: 13px;
 }
 
+body {
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+  }
+  
+  
+
 @media (min-aspect-ratio:16/9) {
     .GearMBK {
         width: 100%;
