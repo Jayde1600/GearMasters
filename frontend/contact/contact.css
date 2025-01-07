@@ -230,5 +230,158 @@
     border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+.social {
+    margin-left: 40px;
+}
 
+.contain-contact {
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    color: white;
+    align-items: center;
+}
 
+.under {
+    font-family: 'Roboto', serif;
+    font-size: 30px;
+    color: white;
+    text-underline-offset: 2px;
+    text-decoration-color: rgb(218, 196, 7);
+    text-decoration-thickness: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-p {
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+    color: rgb(196, 196, 196);
+}
+
+.contact-group {
+    width: 80vh;
+    margin-top: 40px;
+}
+
+.talk-no-jutsu {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.phone-details {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone-text h3 {
+    font-weight: 400;
+    font-family: 'poppins',serif;
+}
+
+.phone-text p {
+    font-weight: 400;
+    color: rgb(211, 211, 211);
+    font-family: 'poppins',serif;
+}
+
+.phone-talk {
+    border: 1px rgb(255, 251, 18) solid;
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.phone-talk:hover {
+    transform: scale(1.05);
+}
+
+.email-details {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.email {
+    border: 1px rgb(255, 251, 18) solid;
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.email:hover {
+    transform: scale(1.05);
+}
+
+.location-details {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.location-soc {
+    border: 1px rgb(255, 251, 18) solid;
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.location-soc:hover {
+    transform: scale(1.05);
+}
+
+.fa-solid {
+    color: rgb(255, 251, 18);
+    font-size: 20px;
+}
+
+.soc-icons {
+    margin-top: 50px;
+}
+
+.fa-social {
+    display: inline-block;
+    background-color: rgb(255, 251, 18);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.soc-icons .fa-brands {
+    color: rgb(0, 0, 0);
+    padding-top: 8px;
+    font-size: 20px;
+}
+
+.fa-social:hover {
+    background: none;
+    border: none;
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.9);
+}
+
+.soc-icons .fa-brands:hover {
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.9);
+}
