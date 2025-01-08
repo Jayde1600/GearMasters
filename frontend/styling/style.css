@@ -148,6 +148,23 @@
     text-shadow: 0 0 20px rgba(255, 251, 18, 0.877);
 }
 
+.navbar li a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: text-shadow 0.3s, color 0.2s;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 20px rgba(255, 251, 18, 0.877);
+}
+
 .intro-text {
     font-family: "Italiana", sans-serif;
     color: white;
