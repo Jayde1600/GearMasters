@@ -1,11 +1,11 @@
 .landing-contact {
     display: flex;
-    height: 100vh;
+    height: 22vh;
     width: 100%;
     /* background: linear-gradient(180deg, transparent, rgba(5, 5, 5, 0.95) 93%), url('../assets/images/2025-Hennessey.jpg'); */
     background-size: cover;
     background-position: center;
-    align-items:end;
+    align-items: end;
 }
 
 .a-head {
@@ -24,7 +24,7 @@
     padding: 0 50px;
     height: 50px;
     align-items: center;
-    background: transparent;
+    background: black;
     color: white;
     animation: scroll-transition;
     animation-timeline: scroll(y);
@@ -127,62 +127,180 @@
     text-shadow: 0 0 20px rgba(255, 251, 18, 0.877);
 }
 
-.contain-car {
+/** --------------------------------------------------------------------------- */
+
+.car {
     display: flex;
     justify-content: center;
-    width: 100%;
+    height: 70vh;
 }
 
-.car-details {
-    width: 90%;
-    height: 70vh;
+.contain-cars {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    max-width: 1300px;
+    height: 500px;
+    gap: 20px;
 }
 
-.photo-1 {
+.big-img {
     width: 100%;
-    max-height: 500px;
+    height: 500px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.big-img:hover {
+    transform: scale(1.03);
+}
+
+.big-photo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.432);
+}
+
+.small-img {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.photo:hover {
+    transform: scale(1.03);
+}
+
+.lambo-small {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.432);
+    object-fit: cover;
+}
+
+/** ------------------------------------------------------------------------------------ */
+
+.car-specs {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contain-specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1300px;
+}
+
+.car-titles {
+    text-align: start;
+    width: 100%;
+}
+
+.car-titles h2 {
+    font-size: 35px;
+    font-family: 'Italiana', serif;
+    margin-bottom: 10px;
+}
+
+.car-titles p {
+    font-size: 18px;
+    font-family: 'Roboto', serif;
+    color: #303030;
+}
+
+.car-price {
+    text-align:center;
+}
+
+.car-price h2 {
+    font-family: "Prata", serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.car {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #121212;
+}
+
+.contain-car {
+    max-width: 1300px;
+    width: 100%;
+}
+
+.car-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.photo-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .lambo-big {
     width: 100%;
-    height: 90%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
 }
 
-.photos {
-    width: 100%;
-    max-height: 500px;
+.photo-large:hover .lambo-big {
+    transform: scale(1.03);
+}
+
+.photo-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    height: 500px;
 }
 
-.photo-2 {
-    height: 240px;
-    width: 100%;
+.photo {
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.photo-3 {
-    height: 240px;
-    width: 100%;
-}
-
-.photo-4 {
-    height: 240px;
-    width: 100%;
-}
-
-.photo-5 {
-    height: 240px;
-    width: 100%;
-}
-
-.lambo-small {
+.photo img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-
+.photo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+} */
