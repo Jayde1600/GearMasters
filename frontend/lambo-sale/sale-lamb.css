@@ -1,6 +1,37 @@
-.a-head {
-    color: white;
-    font-family: 'Roboto', serif;
+* {
+    font-family: "Josefin Sans", "Italiana", "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    overflow: hidden; 
+}
+
+.GearMBK {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio, cover container */
+    z-index: -1; /* Send the video to the back */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Apply the dark overlay */
+    z-index: 0; /* Layer above video, below content */
 }
 
 .company {
@@ -14,7 +45,7 @@
     padding: 0 50px;
     height: 50px;
     align-items: center;
-    background: black;
+    background: #121212;
     color: white;
     animation: scroll-transition;
     animation-timeline: scroll(y);
@@ -64,6 +95,12 @@
     font-weight: 500;
 }
 
+.title h1 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', serif;
+}
+
 .navbar {
     display: flex;
     position: fixed;
@@ -73,33 +110,19 @@
     flex-direction: row;
     gap: 20px;
     height: 60px;
-    background-color: black;
+    background: #121212;
     color: white;
     justify-content: center;
     align-items: center;
     border-top-style: solid;
     border-top-color: rgb(122, 121, 121);
     border-top-width: 1px;
-    border-bottom-style: dashed;
+    border-bottom-style: none;
     border-bottom-color: rgb(122, 121, 121);
     border-bottom-width: 1px;
     animation: scroll-transition;
     animation-timeline: scroll(y);
     z-index: 5;
-}
-
-@keyframes scroll-transition {
-    0% {
-        background-color: black;
-    }
-    1.5% {
-        background-color: #121212;
-        border-bottom: none;
-    }
-    100% {
-        background-color: #121212;
-        border-bottom: none;
-    }
 }
 
 .navbar li {
@@ -117,7 +140,22 @@
     text-shadow: 0 0 20px rgba(255, 251, 18, 0.877);
 }
 
-/** -----------------------------------FEATURED------------------------------------------------------*/
+.navbar li a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: text-shadow 0.3s, color 0.2s;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: rgb(255, 251, 18);
+    text-shadow: 0 0 20px rgba(255, 251, 18, 0.877);
+}
 
 .featured {
     display: flex;
@@ -132,7 +170,7 @@
 
 .featured-space {
     width: 90%;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .featured-space h1 {
@@ -152,7 +190,6 @@
 
 .box-car {
     border: #b3b2b2 solid 1px;
-    padding-bottom: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
@@ -169,6 +206,7 @@
 .car {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .desc-box {
@@ -195,6 +233,3 @@
     font-size: 15px;
     font-weight: 300;
 }
-
-
-
