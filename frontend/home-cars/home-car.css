@@ -254,6 +254,7 @@
 .car-details ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 30px;
 }
 
 .car-details li {
@@ -264,7 +265,30 @@
 }
 
 .car-details li strong {
-    color: #000;
+    color: #706f6f;
     font-family: "Roboto", serif;
+    font-weight: 400;
 }
 
+.car-details .about-p {
+    width: 700px;
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.div-specs {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 15px 0 15px 0;
+    line-height: 25px;
+}
+
+.div-specs .gray {
+    color: #585858;
+    font-family: 'Roboto', serif;
+}
+
+.div-specs p {
+    font-family: 'Roboto', serif;
+}
