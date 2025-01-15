@@ -270,7 +270,6 @@
     font-weight: 400;
 }
 
-/** **/
 .car-details-list {
     list-style: none;
     padding: 0;
@@ -318,5 +317,4 @@
 .div-specs p {
     font-family: 'Roboto', serif;
 }
-
 
