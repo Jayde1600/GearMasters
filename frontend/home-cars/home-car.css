@@ -196,7 +196,7 @@
 .car-specs {
     display: flex;
     justify-content:center;
-    height: 40vh;
+    height: 140vh;
 }
 
 .contain-specs {
@@ -207,7 +207,7 @@
 
 .car-titles {
     display: flex;
-    flex-direction: column; /* Change layout to column */
+    flex-direction: column;
     justify-content: start;
     width: 100%;
 }
@@ -222,7 +222,7 @@
     font-size: 18px;
     font-family: 'Roboto', serif;
     color: #303030;
-    margin: 0; /* Ensure no extra margin is added */
+    margin: 0;
 }
 
 .car-price {
@@ -270,6 +270,32 @@
     font-weight: 400;
 }
 
+/** **/
+.car-details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.car-details-list h2 {
+    color: #000000;
+    font-family: 'Italiana', serif;
+    margin-bottom: 20px;
+}
+
+.car-details-list li {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.car-details-list li strong {
+    display: inline-block;
+    width: 300px;
+    font-weight: 400;
+}
+
 .car-details .about-p {
     width: 700px;
     font-family: 'Roboto', serif;
@@ -292,3 +318,5 @@
 .div-specs p {
     font-family: 'Roboto', serif;
 }
+
+
