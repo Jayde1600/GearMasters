@@ -12,6 +12,8 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+    
+    <!--Email JS setup -->
     <script type="text/javascript">
         (function(){
             emailjs.init({
@@ -24,9 +26,10 @@
 
 <body>
     <section class="landing" id="landing">
-        <video autoplay muted loop disablePictureInPicture id="GearMBK" class="GearMBK" preload="metadata">
-            <source src="frontend/assets/videos/GearMBK.mp4" type="video/mp4">
-        </video>        
+        <video autoplay muted loop disablePictureInPicture id="GearMBK" class="GearMBK" preload="none" data-src="frontend/assets/videos/GearMBK.mp4">
+            <source type="video/mp4">
+        </video>
+              
 
         <div class="overlay"></div>
 
@@ -381,6 +384,19 @@
     video.addEventListener("contextmenu", (event) => {
         event.preventDefault(); // Disable right-click menu
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('GearMBK');
+    const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            video.querySelector('source').src = video.getAttribute('data-src');
+            video.load();
+            observer.unobserve(video);
+        }
+    });
+    observer.observe(video);
+});
+
 </script>
 
 </html>
