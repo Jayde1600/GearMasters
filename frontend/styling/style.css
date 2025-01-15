@@ -14,6 +14,12 @@
     overflow: hidden; 
 }
 
+.a-head {
+    color: white;
+    font-family: 'Roboto', serif;
+    text-decoration: none;
+}
+
 .GearMBK {
     position: absolute;
     top: 0;
@@ -403,7 +409,7 @@
     background-color: white;
     display: flex;
     justify-content: center;
-    height: 90vh;
+    height: 80vh;
 }
 
 .space {
