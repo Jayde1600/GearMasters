@@ -73,7 +73,7 @@
 }
 
 .info-cars {
-    width: 400px;
+    width: 370px;
     height: 420px;
     border: 1px solid rgb(97, 96, 96);
     cursor: pointer;
@@ -133,7 +133,7 @@
 }
 
 .info-services {
-    width: 400px;
+    width: 370px;
     height: 420px;
     border: 1px solid rgb(97, 96, 96);;
     cursor: pointer;
@@ -144,7 +144,7 @@
 }
 
 .info-fin {
-    width: 400px;
+    width: 370px;
     height: 420px;
     border: 1px solid rgb(97, 96, 96);;
     cursor: pointer;
@@ -159,6 +159,7 @@
     height: 120vh;
     max-width: 100%;
     padding: 20px 0;
+    padding-bottom: 100px; 
 }
 
 .opening-times {
@@ -235,7 +236,7 @@
 }
 
 .contain-contact {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     background-color: rgb(22, 22, 22);
     display: grid;

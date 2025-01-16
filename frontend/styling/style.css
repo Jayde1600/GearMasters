@@ -550,6 +550,7 @@
     justify-content: center;
     height: 40vh;
     width: 100%;
+    margin-top: 40px;
 }
 
 .news-space {
@@ -638,7 +639,7 @@
     justify-content: center;
     align-items: center;
     background-color: #121212;
-    height: 75vh;
+    height: 85vh;
     width: 100%;
     color: white;
 }
