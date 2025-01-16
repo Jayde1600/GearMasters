@@ -102,7 +102,7 @@
 .ourCars h3 {
     font-size: 25px;
     color: rgb(255, 251, 18);
-    text-shadow: 0 0 10px rgba(255, 251, 18, 0.9);
+    text-shadow: 0 0 5px rgba(255, 251, 18, 0.9);
 }
 
 .CarsText {
@@ -172,7 +172,7 @@
     font-family: 'Poppins', serif;
     font-size: 55px;
     color: rgb(255, 251, 18);
-    text-shadow: 0 0 15px rgba(255, 251, 18, 0.9), 0 0 30px rgba(255, 251, 18, 0.7);
+    text-shadow: 0 0 5px rgba(255, 251, 18, 0.9), 0 0 30px rgba(255, 251, 18, 0.7);
 }
 
 .contain-open {
