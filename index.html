@@ -385,17 +385,17 @@
         event.preventDefault(); // Disable right-click menu
     });
 
-    document.addEventListener('DOMContentLoaded', () => {
-    const video = document.getElementById('GearMBK');
-    const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            video.querySelector('source').src = video.getAttribute('data-src');
-            video.load();
-            observer.unobserve(video);
-        }
-    });
-    observer.observe(video);
-});
+//     document.addEventListener('DOMContentLoaded', () => {
+//     const video = document.getElementById('GearMBK');
+//     const observer = new IntersectionObserver((entries) => {
+//         if (entries[0].isIntersecting) {
+//             video.querySelector('source').src = video.getAttribute('data-src');
+//             video.load();
+//             observer.unobserve(video);
+//         }
+//     });
+//     observer.observe(video);
+// });
 
 </script>
 
