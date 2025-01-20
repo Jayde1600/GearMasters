@@ -73,7 +73,7 @@
 }
 
 .info-cars {
-    width: 370px;
+    width: 420px;
     height: 420px;
     border: 1px solid rgb(97, 96, 96);
     cursor: pointer;
@@ -133,7 +133,7 @@
 }
 
 .info-services {
-    width: 370px;
+    width: 420px;
     height: 420px;
     border: 1px solid rgb(97, 96, 96);;
     cursor: pointer;
@@ -144,7 +144,7 @@
 }
 
 .info-fin {
-    width: 370px;
+    width: 420px;
     height: 420px;
     border: 1px solid rgb(97, 96, 96);;
     cursor: pointer;
@@ -236,7 +236,7 @@
 }
 
 .contain-contact {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     background-color: rgb(22, 22, 22);
     display: grid;

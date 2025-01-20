@@ -639,7 +639,7 @@
     justify-content: center;
     align-items: center;
     background-color: #121212;
-    height: 85vh;
+    height: 65vh;
     width: 100%;
     color: white;
 }
@@ -673,9 +673,28 @@
     font-size: 15px;
     font-weight: 300;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-divider ul li:hover {
+    color: rgb(255, 251, 18);
+    transform: scale(1.03);
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.877);
+}
+
+.nav-divider .pre-foot ul li a {
+    font-family: 'Roboto', serif;
+    list-style: none;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-divider .pre-foot ul li a:hover {
+    text-decoration: none;
     color: rgb(255, 251, 18);
     transform: scale(1.03);
     text-shadow: 0 0 10px rgba(255, 251, 18, 0.877);
@@ -767,6 +786,7 @@
         height: 100%;
     }
 }
+
 
 /* 
 .services .ser-heading {
