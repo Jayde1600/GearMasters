@@ -369,10 +369,12 @@
     cursor: pointer;
 }
 
-.soc-icons .fa-brands {
+.soc-icons .fa-social .fa-brands {
     color: rgb(0, 0, 0);
     padding-top: 8px;
     font-size: 20px;
+    display: block;
+    height: 100%;
 }
 
 .fa-social:hover {
@@ -387,14 +389,27 @@
     text-shadow: 0 0 10px rgba(255, 251, 18, 0.9);
 }
 
+.fill-in {
+    width: 700px;
+}
+
 .messageForm {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 20px;
+}
+
+.messageForm .inputGroup label {
+    font-family: 'Roboto', serif;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    font-size: 18px;
 }
 
 .messageForm .inputGroup {
+    font-family: 'Roboto', serif;
     margin: 18px 0px;
     position: relative;
 }
@@ -408,13 +423,58 @@
 }
 
 .messageForm input, .messageForm textarea {
+    font-family: 'Roboto', serif;
     width: 100%;
     font-size: 18px;
     padding: 2px 0px;
-    background-color: #2e2e2e;
+    background-color: transparent;
     border: none;
     color: #ddd;
-    border-bottom: solid 1px white;
+    border-bottom: solid 2px rgb(80, 80, 80);
     outline: none;
+}
+
+.messageForm textarea {
+    resize: none;
+    height: 200px;
+    display: block;
+    max-width: 700px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background-color: rgb(255, 251, 18);
+    cursor: grab;
+}
+
+.subMessage {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(255, 251, 18);
+    border-radius: 4px;
+    border: 1px solid rgb(255, 251, 18);
+    color: black;
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 251, 18, 0.9);
+    transition: background-color 0.3s;
+}
+
+.subMessage:hover {
+    background-color: black;
+    border-color: white;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+.subMessage:active {
+    background-color: white;
+    color: black;
 }
 

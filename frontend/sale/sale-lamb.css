@@ -229,7 +229,7 @@
 
 .desc-box .car-location {
     font-family: 'Roboto', serif;
-    font-size: 15px;
+    font-size: 15px; 
     font-weight: 300;
 }
 
@@ -361,6 +361,7 @@
     font-size: 15px;
     font-weight: 300;
     cursor: pointer;
+    color: white;
 }
 
 .nav-divider ul li:hover {
@@ -374,6 +375,32 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: solid rgb(87, 87, 87) 1px;
+}
+
+.pre-foot ul li {
+    font-family: 'Roboto', serif;
+    text-decoration: none;
+    color: white;
+}
+
+.pre-foot ul li:hover {
+    color: rgb(255, 251, 18);
+    transform: scale(1.03);
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.877);
+}
+
+.pre-foot ul li a {
+    display: block;
+    font-family: 'Roboto', serif;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.pre-foot ul li a:hover {
+    color: rgb(255, 251, 18);
+    transform: scale(1.03);
+    text-shadow: 0 0 10px rgba(255, 251, 18, 0.877);
 }
 
 .address p {
