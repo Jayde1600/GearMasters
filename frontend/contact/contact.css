@@ -406,6 +406,35 @@
     left: 0;
     bottom: 4px;
     font-size: 18px;
+    transition: 0.4s;
+    pointer-events: none;
+    color: #888;
+}
+
+.messageForm .inputGroup:nth-child(4) label {
+    top: 2px;
+}
+
+.messageForm .inputGroup input:focus ~ label, .inputGroup textarea:focus ~ label,
+.messageForm .inputGroup input:valid ~ label, .inputGroup textarea:valid ~ label {
+    transform: translateY(-30px); /** Cool shh I learned */
+    font-size: 15px;
+}
+
+@media(max-width: 1100px) {
+    .messageForm .halfWidth {
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 900px) {
+    .contact-form .contain-contact {
+        flex-wrap: wrap;
+    }
+    .fill-in, .social {
+        flex-basis: 100%;
+        margin: 0%;
+    }
 }
 
 .messageForm .inputGroup {
@@ -451,6 +480,12 @@ textarea::-webkit-scrollbar-track {
     cursor: grab;
 }
 
+.textarea::-webkit-scrollbar-thumb {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    cursor: grab;
+}
+
 .subMessage {
     width: 200px;
     height: 40px;
@@ -467,9 +502,9 @@ textarea::-webkit-scrollbar-track {
 }
 
 .subMessage:hover {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-color: white;
-    color: white;
+    color: black;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
 
