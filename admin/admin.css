@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.admin-divider {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(206, 29, 29);
+    height: 60px;
+    width: 100%;
+}
+
+.admin-heading {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.admin-nav {
+    display: grid;
+    background-color: rgb(206, 29, 29);
+    height: 45vh;
+    grid-template-rows: repeat(5, 1fr);
+    width: 200px;
+}
+
+.nav-title {
+    width: 200px;
+    padding: 10px 5px;
+    border: 1px solid white;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.side-text {
+    color: white;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
