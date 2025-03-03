@@ -13,6 +13,7 @@
     display: grid;
     grid-template-columns: 300px 1fr;
     width: 100%;
+    background-color: white;
 }
 
 .admin-divider {
@@ -42,6 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .search-bar {
@@ -76,10 +78,21 @@
 .search-btn {
     z-index: 2;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.search-btn:active {
+    color: red;
 }
 
 .navigation {
     margin-top: 30px;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    top: 69px;
 }
 
 .admin-nav {
@@ -90,7 +103,6 @@
 
 .nav-title {
     display: inline-block;
-    padding-left: 20px;
     width: 100%;
     padding: 10px 0px 10px 0px;
     font-size: 20px;
@@ -102,6 +114,29 @@
 .nav-title:hover {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     border: 2px solid #f1f1f1;
+    border-radius: 40px;
+}
+
+.iconer {
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    border: none;
+}
+
+.nav-logout {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+}
+
+.nav-logout:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
     border-radius: 40px;
 }
 
@@ -125,7 +160,6 @@
 
 .admin-back {
     position: absolute;
-    width: 100%;
     background-color: white;
     top: 0px;
     right: 0px;
@@ -149,9 +183,39 @@
     font-weight: 600;
 }
 
-.the-sauce {
-    display: flex;
-    top: 68px;
-    height: 100%;
-    width: 100%;
+/** -------------------------------------------------------------------------------------------------------------------------------- */
+
+.admin-main {
+    background-color: #f1f1f1;
+    position: absolute;
+    left: 300px;
+    right: 40px;
+    top: 100px;
+    bottom: 50px;
+    border-radius: 8px;
 }
+
+.position-h1 {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 40px;
+    font-size: 26px;
+    color: #2b2b2b;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    padding-left: 32px;
+}
+
+.box1 {
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    border-radius: 8px;
+}
+
